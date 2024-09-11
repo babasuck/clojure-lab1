@@ -1,0 +1,304 @@
+; This is the Calva REPL Window.
+; It's just a file, really, with some special treatment from Calva.
+; Use it as a REPL input prompt if you like. (When the REPL is connected.)
+; TIPS: The keyboard shortcut `ctrl+alt+o r` shows and focuses this window
+; Please see https://calva.io/repl-window/ for more info.
+; Happy coding! ♥️
+
+; TIPS: As with any Clojure file when the REPL is connected:
+; - `alt+enter` evaluates the current top level form.
+; - `ctrl+enter` evaluates the current form.
+; Special for this file:
+; - `alt+up` and `alt+down` traverse up and down the REPL command history
+;    when the cursor is after the last contents at the prompt
+; 
+; See also the Calva Inspector: https://calva.io/inspector/
+
+PLEASE NOTE
+We will update the default location of this file.
+The new default location will be
+  "<projectRootPath>/.calva/repl.calva-repl"
+For now the legacy path is used by default.
+To give yourself a smooth transition, you can opt in
+to the change, by configuring this setting as false:
+  "calva.useLegacyReplWindowPath"
+and then add "**/.calva/repl.calva-repl" to your ".gitignore" file.
+
+
+This file is configured as the output destination for all REPL output.
+You can configure this with the setting:
+  "calva.outputDestinations"
+
+
+; Connecting ...
+; Reading port file: file:///d%3A/code/clojure/lab1/.nrepl-port ...
+; Using host:port localhost:1409 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+
+; Syntax error compiling at (d:\code\clojure\lab1\src\lab1\core.clj:7:1).
+; Unable to resolve symbol: my-fun in this context
+clj꞉lab1.core꞉> 
+#'lab1.core/my-fun
+clj꞉lab1.core꞉> 
+4
+clj꞉lab1.core꞉> 
+4000000
+clj꞉lab1.core꞉> 
+4000000000000
+clj꞉lab1.core꞉> 
+100
+clj꞉lab1.core꞉> 
+#'lab1.core/my-square
+clj꞉lab1.core꞉> 
+100
+clj꞉lab1.core꞉> 
+#'lab1.core/my-map
+clj꞉lab1.core꞉> 
+()
+clj꞉lab1.core꞉> 
+#'lab1.core/my-square
+clj꞉lab1.core꞉> 
+1
+clj꞉lab1.core꞉> 
+#'lab1.core/my-map
+clj꞉lab1.core꞉> 
+#'lab1.core/my-map
+clj꞉lab1.core꞉> 
+; Execution error (IllegalArgumentException) at lab1.core/my-map (form-init17670130859735880210.clj:12).
+; Don't know how to create ISeq from: clojure.lang.PersistentList$Primordial
+clj꞉lab1.core꞉> 
+(1 1 2 3)
+clj꞉lab1.core꞉> 
+#'lab1.core/my-map
+clj꞉lab1.core꞉> 
+; Execution error (IllegalArgumentException) at lab1.core/my-map (form-init17670130859735880210.clj:12).
+; Don't know how to create ISeq from: clojure.lang.PersistentList$Primordial
+clj꞉lab1.core꞉> 
+#'lab1.core/my-map
+clj꞉lab1.core꞉> 
+; Execution error (IllegalArgumentException) at lab1.core/my-map (form-init17670130859735880210.clj:12).
+; Don't know how to create ISeq from: clojure.lang.PersistentList$Primordial
+clj꞉lab1.core꞉> 
+#'lab1.core/my-map
+clj꞉lab1.core꞉> 
+((3))
+clj꞉lab1.core꞉> 
+#'lab1.core/my-map
+clj꞉lab1.core꞉> 
+; Execution error (ArityException) at lab1.core/my-map (form-init17670130859735880210.clj:12).
+; Wrong number of args (1) passed to: lab1.core/my-square
+clj꞉lab1.core꞉> 
+#'lab1.core/my-square
+clj꞉lab1.core꞉> 
+#'lab1.core/my-map
+clj꞉lab1.core꞉> 
+; Execution error (ClassCastException) at lab1.core/my-square (form-init17670130859735880210.clj:4).
+; class clojure.lang.PersistentList cannot be cast to class java.lang.Number (clojure.lang.PersistentList is in unnamed module of loader 'app'; java.lang.Number is in module java.base of loader 'bootstrap')
+clj꞉lab1.core꞉> 
+#'lab1.core/my-map
+clj꞉lab1.core꞉> 
+(9)
+clj꞉lab1.core꞉> 
+#'lab1.core/my-map2
+clj꞉lab1.core꞉> 
+; Execution error (IllegalArgumentException) at lab1.core/my-map2$fn (form-init17670130859735880210.clj:18).
+; Don't know how to create ISeq from: java.lang.Long
+clj꞉lab1.core꞉> 
+#'lab1.core/my-map2
+clj꞉lab1.core꞉> 
+; Execution error (IllegalArgumentException) at lab1.core/my-map2$fn (form-init17670130859735880210.clj:20).
+; Don't know how to create ISeq from: java.lang.Long
+clj꞉lab1.core꞉> 
+#'lab1.core/my-square
+clj꞉lab1.core꞉> 
+; Execution error (IllegalArgumentException) at lab1.core/my-map2$fn (form-init17670130859735880210.clj:20).
+; Don't know how to create ISeq from: java.lang.Long
+clj꞉lab1.core꞉> 
+#'lab1.core/my-map2
+clj꞉lab1.core꞉> 
+#'lab1.core/my-map2
+clj꞉lab1.core꞉> 
+; Execution error (IllegalArgumentException) at lab1.core/my-map2$fn (form-init17670130859735880210.clj:20).
+; Don't know how to create ISeq from: java.lang.Long
+clj꞉lab1.core꞉> 
+#'lab1.core/a
+clj꞉lab1.core꞉> 
+; Execution error (IllegalArgumentException) at lab1.core/eval2513$fn (form-init17670130859735880210.clj:24).
+; Don't know how to create ISeq from: java.lang.Long
+clj꞉lab1.core꞉> 
+(1 1 2 3 4 5)
+clj꞉lab1.core꞉> 
+6
+clj꞉lab1.core꞉> 
+(1 1 2 3 4 5)
+clj꞉lab1.core꞉> 
+; Execution error (IllegalArgumentException) at lab1.core/my-map2$fn (form-init17670130859735880210.clj:20).
+; Don't know how to create ISeq from: java.lang.Long
+clj꞉lab1.core꞉> 
+; Execution error (IllegalArgumentException) at lab1.core/eval2525$fn (form-init17670130859735880210.clj:25).
+; Don't know how to create ISeq from: java.lang.Long
+clj꞉lab1.core꞉> 
+(1 1 2 3 4 5)
+clj꞉lab1.core꞉> 
+"54321"
+clj꞉lab1.core꞉> 
+; Execution error (ClassCastException) at lab1.core/my-square (form-init17670130859735880210.clj:4).
+; class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap')
+clj꞉lab1.core꞉> 
+; Execution error (ClassCastException) at lab1.core/my-square (form-init17670130859735880210.clj:4).
+; class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap')
+clj꞉lab1.core꞉> 
+; Execution error (ClassCastException) at lab1.core/eval2571$fn (form-init17670130859735880210.clj:18).
+; class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap')
+clj꞉lab1.core꞉> 
+"54321"
+clj꞉lab1.core꞉> 
+"5lab1.core$my_square@2e98725c4lab1.core$my_square@2e98725c3lab1.core$my_square@2e98725c2lab1.core$my_square@2e98725c1"
+clj꞉lab1.core꞉> 
+#object[lab1.core$eval2583$fn__2584 0x79415131 "lab1.core$eval2583$fn__2584@79415131"]
+clj꞉lab1.core꞉> 
+; Execution error (ClassCastException) at lab1.core/my-square (form-init17670130859735880210.clj:4).
+; class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap')
+clj꞉lab1.core꞉> 
+"1"
+clj꞉lab1.core꞉> 
+"4"
+clj꞉lab1.core꞉> 
+; Execution error (ClassCastException) at lab1.core/my-square (form-init17670130859735880210.clj:4).
+; class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap')
+clj꞉lab1.core꞉> 
+#'lab1.core/my-map2
+clj꞉lab1.core꞉> 
+; Execution error (ClassCastException) at lab1.core/my-square (form-init17670130859735880210.clj:4).
+; class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap')
+clj꞉lab1.core꞉> 
+"54321"
+clj꞉lab1.core꞉> 
+"51"
+clj꞉lab1.core꞉> 
+"54321"
+clj꞉lab1.core꞉> 
+(1 2 3 4 5 1)
+clj꞉lab1.core꞉> 
+; Error printing return value (IllegalArgumentException) at clojure.lang.RT/seqFrom (RT.java:557).
+; Don't know how to create ISeq from: java.lang.Long
+clj꞉lab1.core꞉> 
+"54321"
+clj꞉lab1.core꞉> 
+"5 4 3 2 1"
+clj꞉lab1.core꞉> 
+; Execution error (ClassCastException) at lab1.core/my-square (form-init17670130859735880210.clj:4).
+; class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap')
+clj꞉lab1.core꞉> 
+"5 4 3 2 1"
+clj꞉lab1.core꞉> 
+#'lab1.core/a
+clj꞉lab1.core꞉> 
+"5 4 3 2 1"
+clj꞉lab1.core꞉> 
+#'lab1.core/b
+clj꞉lab1.core꞉> 
+"world Hello"
+clj꞉lab1.core꞉> 
+"Hello world"
+clj꞉lab1.core꞉> 
+"1491625"
+clj꞉lab1.core꞉> 
+; Execution error (ClassCastException) at lab1.core/eval2668$fn (form-init17670130859735880210.clj:18).
+; class java.lang.Long cannot be cast to class clojure.lang.IPersistentCollection (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IPersistentCollection is in unnamed module of loader 'app')
+clj꞉lab1.core꞉> 
+(1)
+clj꞉lab1.core꞉> 
+(3 2 1)
+clj꞉lab1.core꞉> 
+(3 2 1)
+clj꞉lab1.core꞉> 
+; Execution error (ClassCastException) at lab1.core/eval2678$fn (form-init17670130859735880210.clj:18).
+; class java.lang.Long cannot be cast to class clojure.lang.IPersistentCollection (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IPersistentCollection is in unnamed module of loader 'app')
+clj꞉lab1.core꞉> 
+"Hello world"
+clj꞉lab1.core꞉> 
+"1 2 3 4 5"
+clj꞉lab1.core꞉> 
+#'lab1.core/my-map2
+clj꞉lab1.core꞉> 
+"2516941"
+clj꞉lab1.core꞉> 
+#'lab1.core/my-map2
+clj꞉lab1.core꞉> 
+"1491625"
+clj꞉lab1.core꞉> 
+#'lab1.core/my-map2
+clj꞉lab1.core꞉> 
+"1 4 9 16 25"
+(1)
+clj꞉lab1.core꞉> 
+(4)
+clj꞉lab1.core꞉> 
+(4 (my-square 2))
+clj꞉lab1.core꞉> 
+(4)
+clj꞉lab1.core꞉> 
+#object[lab1.core$eval2726$fn__2727 0x41c3313b "lab1.core$eval2726$fn__2727@41c3313b"]
+clj꞉lab1.core꞉> 
+[1 4 9 16]
+clj꞉lab1.core꞉> 
+(2 3 4 5)
+clj꞉lab1.core꞉> 
+#'lab1.core/my-filter
+clj꞉lab1.core꞉> 
+(2 3 4 5)
+clj꞉lab1.core꞉> 
+#'lab1.core/isBiggerThan1
+clj꞉lab1.core꞉> 
+5/2
+clj꞉lab1.core꞉> 
+; Syntax error reading source at (REPL:15:4).
+; Invalid token: //
+clj꞉lab1.core꞉> 
+#'lab1.core/isBiggerThan1
+clj꞉lab1.core꞉> 
+(2 4)
+clj꞉lab1.core꞉> 
+(2 4)
+clj꞉lab1.core꞉> 
+(2 4)
+clj꞉lab1.core꞉> 
+(1 4 9 16 25)
+clj꞉lab1.core꞉> 
+(1 4 9 16 25)
+clj꞉lab1.core꞉> 
+#'lab1.core/my-filter
+clj꞉lab1.core꞉> 
+(1 4 9 16 25)
+clj꞉lab1.core꞉> 
+(1 4 9 16 25)
+clj꞉lab1.core꞉> 
+(1 4 9 16 25)
+clj꞉lab1.core꞉> 
+(1 4 9 16 25)
+clj꞉lab1.core꞉> 
+(1 4 9 16 25)
+clj꞉lab1.core꞉> 
+(1 4 9 16 25)
+clj꞉lab1.core꞉> 
+(1 4 9 16 25)
+clj꞉lab1.core꞉> 
+(1 4 9 16 25)
+clj꞉lab1.core꞉> 
+(1 4 9 16 25)
+clj꞉lab1.core꞉> 
+(1 4 9 16 25)
+clj꞉lab1.core꞉> 
+(1 4 9 16 25)
+clj꞉lab1.core꞉> 
+100
+clj꞉lab1.core꞉> 
+100
+clj꞉lab1.core꞉> 
+(1 4 9 16 25)
+clj꞉lab1.core꞉> 
+(1 4 9 16 25)
+clj꞉lab1.core꞉> 
