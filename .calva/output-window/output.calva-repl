@@ -1,0 +1,173 @@
+; Connecting using "Generic" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Connecting ...
+; Reading port file: file:///d%3A/code/clojure/lab1/.nrepl-port ...
+; Using host:port localhost:8927 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉lab1.core꞉> 
+"Please see https://calva.io/output/#about-stdout-in-the-repl-window
+about why stdout printed to this file is prepended with `;` to be line comments."
+clj꞉lab1.core꞉> 
+#'lab1.core/a
+clj꞉lab1.core꞉> 
+#'lab1.core/b
+clj꞉lab1.core꞉> 
+#'lab1.core/l
+clj꞉lab1.core꞉> 
+#'lab1.core/lb
+clj꞉lab1.core꞉> 
+#'lab1.core/concatToEvery
+clj꞉lab1.core꞉> 
+#'lab1.core/foo
+clj꞉lab1.core꞉> 
+("ab" "ac")
+clj꞉lab1.core꞉> 
+()
+clj꞉lab1.core꞉> 
+("a" "b" "c")
+clj꞉lab1.core꞉> 
+("ab" "ac" "ba" "bc" "ca" "cb")
+clj꞉lab1.core꞉> 
+("aba" "abc" "abd" "aca" "acb" "acd" "ada" "adb" "adc" "bab" "bac" "bad" "bca" "bcb" "bcd" "bda" "bdb" "bdc" "cab" "cac" "cad" "cba" "cbc" "cbd" "cda" "cdb" "cdc" "dab" "dac" "dad" "dba" "dbc" "dbd" "dca" "dcb" "dcd")
+clj꞉lab1.core꞉> 
+#'lab1.core/my-square
+clj꞉lab1.core꞉> 
+100
+clj꞉lab1.core꞉> 
+#'lab1.core/my-map
+clj꞉lab1.core꞉> 
+#'lab1.core/my-filter
+clj꞉lab1.core꞉> 
+(2 4)
+clj꞉lab1.core꞉> 
+(2 4)
+clj꞉lab1.core꞉> 
+1
+clj꞉lab1.core꞉> 
+(1 4 9 16 25)
+clj꞉lab1.core꞉> 
+(1 4 9 16 25)
+clj꞉lab1.core꞉> 
+("ab" "ac")
+clj꞉lab1.core꞉> 
+("aba" "abc" "abd" "aca" "acb" "acd" "ada" "adb" "adc" "bab" "bac" "bad" "bca" "bcb" "bcd" "bda" "bdb" "bdc" "cab" "cac" "cad" "cba" "cbc" "cbd" "cda" "cdb" "cdc" "dab" "dac" "dad" "dba" "dbc" "dbd" "dca" "dcb" "dcd")
+clj꞉lab1.core꞉> 
+("aba" "abc" "aca" "acb" "bab" "bac" "bca" "bcb" "cab" "cac" "cba" "cbc")
+clj꞉lab1.core꞉> 
+; Connecting using "Generic" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Connecting ...
+; Reading port file: file:///d%3A/code/clojure/lab1/.nrepl-port ...
+; Using host:port localhost:34124 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉lab1.core꞉> 
+"Please see https://calva.io/output/#about-stdout-in-the-repl-window
+about why stdout printed to this file is prepended with `;` to be line comments."
+clj꞉lab1.core꞉> 
+#'lab1.core/l
+clj꞉lab1.core꞉> 
+#'lab1.core/lb
+clj꞉lab1.core꞉> 
+#'lab1.core/concatToEvery
+clj꞉lab1.core꞉> 
+#'lab1.core/foo
+clj꞉lab1.core꞉> 
+("ab" "ac")
+clj꞉lab1.core꞉> 
+()
+clj꞉lab1.core꞉> 
+("a" "b" "c")
+clj꞉lab1.core꞉> 
+("ab" "ac" "ba" "bc" "ca" "cb")
+clj꞉lab1.core꞉> 
+("ab" "ac" "ba" "bc" "ca" "cb")
+clj꞉lab1.core꞉> 
+("aba" "abc" "aca" "acb" "bab" "bac" "bca" "bcb" "cab" "cac" "cba" "cbc")
+clj꞉lab1.core꞉> 
+; Error printing return value (IllegalArgumentException) at clojure.lang.RT/seqFrom (RT.java:557).
+; Don't know how to create ISeq from: lab1.core$concatToEvery
+clj꞉lab1.core꞉> 
+#'lab1.core/concatToEvery
+clj꞉lab1.core꞉> 
+#'lab1.core/foo
+clj꞉lab1.core꞉> 
+("a" "b" "c")
+clj꞉lab1.core꞉> 
+("ab" "ac" "ba" "bc" "ca" "cb")
+clj꞉lab1.core꞉> 
+("aba" "abc" "aca" "acb" "bab" "bac" "bca" "bcb" "cab" "cac" "cba" "cbc")
+clj꞉lab1.core꞉> 
+("ab" "ac")
+clj꞉lab1.core꞉> 
+; Error printing return value (ArityException) at clojure.lang.AFn/throwArity (AFn.java:429).
+; Wrong number of args (1) passed to: lab1.core/concatToEvery
+clj꞉lab1.core꞉> 
+#'lab1.core/concatToEvery
+clj꞉lab1.core꞉> 
+#'lab1.core/step
+clj꞉lab1.core꞉> 
+#'lab1.core/foo
+clj꞉lab1.core꞉> 
+("a" "b" "c")
+clj꞉lab1.core꞉> 
+("aba" "abc" "aca" "acb" "bab" "bac" "bca" "bcb" "cab" "cac" "cba" "cbc")
+clj꞉lab1.core꞉> 
+#'lab1.core/step
+clj꞉lab1.core꞉> 
+("ab" "ac")
+clj꞉lab1.core꞉> 
+("ab" "ac" "ba" "bc")
+clj꞉lab1.core꞉> 
+#'lab1.core/concatToEvery
+clj꞉lab1.core꞉> 
+#'lab1.core/step
+clj꞉lab1.core꞉> 
+#'lab1.core/foo-rec
+clj꞉lab1.core꞉> 
+#'lab1.core/foo
+clj꞉lab1.core꞉> 
+("a" "b" "c")
+clj꞉lab1.core꞉> 
+("aba" "abc" "aca" "acb" "bab" "bac" "bca" "bcb" "cab" "cac" "cba" "cbc")
+clj꞉lab1.core꞉> 
+#'lab1.core/foo
+clj꞉lab1.core꞉> 
+("a" "b" "c")
+clj꞉lab1.core꞉> 
+("aba" "abc" "aca" "acb" "bab" "bac" "bca" "bcb" "cab" "cac" "cba" "cbc")
+clj꞉lab1.core꞉> 
+#'lab1.core/foo2
+clj꞉lab1.core꞉> 
+("aba" "abc" "aca" "acb" "bab" "bac" "bca" "bcb" "cab" "cac" "cba" "cbc")
+clj꞉lab1.core꞉> 
+("a" "b" "c")
+clj꞉lab1.core꞉> 
+("ab" "ac" "ba" "bc" "ca" "cb")
+clj꞉lab1.core꞉> 
+("a" "b" "c")
+clj꞉lab1.core꞉> 
+; Syntax error compiling at (d:\code\clojure\lab1\src\lab1\core.clj:85:20).
+; Unable to resolve symbol: acc in this context
+; 
+; Syntax error reading source at (REPL:85:46).
+; Unmatched delimiter: )
+clj꞉lab1.core꞉> 
+#'lab1.core/foo2
+clj꞉lab1.core꞉> 
+("aba" "abc" "aca" "acb" "bab" "bac" "bca" "bcb" "cab" "cac" "cba" "cbc")
+clj꞉lab1.core꞉> 
+; nREPL connection failed: Error: read ECONNRESET
+; Failed connecting.
+; nREPL Connection was closed

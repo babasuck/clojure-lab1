@@ -36,7 +36,7 @@
 (foo l 0) ; '()
 (foo l 1) ; ("a" "b" "c")
 (foo l 2) ; ("ab" "ac" "ba" "bc" "ca" "cb")
-(foo lb 3)
+(foo l 3)
 
 ; 1.3
 
@@ -62,11 +62,28 @@
  
 (filter even? a)
 (my-filter even? a)
-(map my-square a)1
+(map my-square a)
 (my-map my-square a)
 
 ; 1.4 
 
-(defn foo4 [l n]
-  
-  )
+(defn concatToEvery [c l]
+  "Добавляет c к каждому элементу в l, если элемент не начинается с c."
+  (map (fn [item] (str c item))
+       (filter (fn [item] (not (.startsWith item c))) l)))
+
+(defn step [l acc]
+  "Выполняет один шаг конкатенации для каждого символа в l с каждым элементом acc."
+  (reduce concat (map (fn [c] (concatToEvery c acc)) l)))
+
+(defn foo2 [l n]
+  "Генерирует список всех строк длины n без повторяющихся подряд символов."
+  (loop [acc l, count n]
+    (cond
+      (<= count 0) '()
+      (= count 1) acc
+      :else (recur (step l acc) (dec count)))))
+
+
+(foo2 l 1)
+(foo2 l 3)
