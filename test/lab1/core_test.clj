@@ -2,6 +2,12 @@
   (:require [clojure.test :refer :all]
             [lab1.core :refer :all]))
 
+(deftest test-concatToEvery-recur
+  (testing "Testing concatToEvery-recur function"
+    (is (= (concatToEvery-recur "a" '("a" "b" "c")) '("ab" "ac")))
+    (is (= (concatToEvery-recur "b" '("a" "b" "c")) '("ba" "bc")))
+    (is (= (concatToEvery-recur "c" '("c" "d" "e")) '("cd" "ce")))))
+
 (deftest test-concatToEvery-loop
   (testing "Testing concatToEvery-loop function"
     (is (= (concatToEvery-loop "a" '("a" "b" "c")) '("ab" "ac")))

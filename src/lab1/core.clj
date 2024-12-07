@@ -1,5 +1,31 @@
 (ns lab1.core)
 
+
+(defn concatToEvery-recur [c l]
+  (if (empty? l)
+    '()
+    (let [head (first l)
+          tail (rest l)]
+      (if (.startsWith head c)
+        (concatToEvery-recur c tail)
+        (cons (str c head) (concatToEvery-recur c tail))))))
+
+
+(defn foo-recursive [l n]
+  (if (<= n 0)
+    '()
+    (if (= n 1)
+      l
+      (let [prev-acc (foo-recursive l (dec n))
+            new-acc (letfn [(combine [rem acc]
+                              (if (empty? rem)
+                                acc
+                                (let [head (first rem) tail (rest rem)
+                                      combined (concatToEvery-recur head l)]
+                                  (combine tail (concat acc combined)))))]
+                      (combine prev-acc '()))]
+        new-acc))))
+
  (defn concatToEvery-loop [c l]
    "Concatenates c to every element in l if the element does not start with c, using recur."
    (loop [acc '() new-l l]
