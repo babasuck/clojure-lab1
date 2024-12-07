@@ -25,6 +25,13 @@
     (is (= (step '("a" "b" "c") '("x" "y")) '("ax" "ay" "bx" "by" "cx" "cy")))
     (is (= (step '("x") '("y" "z")) '("xy" "xz")))))
 
+(deftest test-foo-recur
+  (testing "Testing foo-loop function"
+    (is (= (foo-recursive '("a" "b" "c") 0) '()))
+    (is (= (foo-recursive '("a" "b" "c") 1) '("a" "b" "c")))
+    (is (= (foo-recursive '("a" "b" "c") 2) '("ab" "ac" "ba" "bc" "ca" "cb")))
+    (is (= (foo-recursive '("a" "b") 3) '("aba" "bab")))))
+
 (deftest test-foo-loop
   (testing "Testing foo-loop function"
     (is (= (foo-loop '("a" "b" "c") 0) '()))

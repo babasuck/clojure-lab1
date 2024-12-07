@@ -20,11 +20,14 @@
             new-acc (letfn [(combine [rem acc]
                               (if (empty? rem)
                                 acc
-                                (let [head (first rem) tail (rest rem)
-                                      combined (concatToEvery-recur head l)]
-                                  (combine tail (concat acc combined)))))]
-                      (combine prev-acc '()))]
+                                (let [head (first rem) 
+                                      tail (rest rem) 
+                                      combined (concatToEvery-recur head prev-acc)] 
+                                  (combine tail (concat acc combined))))) 
+                            ]
+                      (combine l '()))]
         new-acc))))
+
 
  (defn concatToEvery-loop [c l]
    "Concatenates c to every element in l if the element does not start with c, using recur."
